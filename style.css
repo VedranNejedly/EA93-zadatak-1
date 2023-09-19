@@ -12,6 +12,17 @@
     }
 }
 
+.swiper-slide{
+    display: flex!important;
+    flex-direction: row;
+    .card+.card{
+        margin-left:40px;
+    }
+}
+.swiper-pagination-2{
+    text-align: center;
+    margin-top: 64px    ;
+}
 
 
 ul{
@@ -78,7 +89,7 @@ h2{
     font-size: 64px!important;
     line-height: 68px!important;
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    font-weight: 700!important;
 }
 
 h5{
@@ -149,6 +160,10 @@ input{
 .traveldestinations-title{
     text-align: center;
     margin-bottom: 64px;
+}
+
+.lastminute-title{
+    text-align: center;
 }
 
 .card{
