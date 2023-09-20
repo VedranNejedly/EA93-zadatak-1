@@ -15,6 +15,11 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,6 +30,40 @@
   </head>
   <body>
     <section class="hero">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="logo-wrapper">
+            <img class="navbar-logo" src="images/Navbar-logo.svg" />
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-list">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PACKAGES</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
@@ -32,7 +71,13 @@
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide"><img src="images/Hero_1.png" /></div>
+                <div class="swiper-slide main-slide">
+                  <img src="images/Hero_1.png" />
+                  <div class="hero-text">
+                    <p class="bold">YOUR ULTIMATE TRAVEL PARTNER</p>
+                    <h1>Explore the World, Unwrap the Adventure</h1>
+                  </div>
+                </div>
                 <div class="swiper-slide"><img src="images/Hero_2.png" /></div>
                 <div class="swiper-slide"><img src="images/Hero_3.png" /></div>
               </div>
@@ -59,7 +104,7 @@
             <button class="btn-primary">Learn More</button>
           </div>
           <div class="col-12 col-lg-5">
-            <div class="image-wrapper">
+            <div class="promotion-image-wrapper">
               <img src="images/PromotionImage.png" alt="" />
             </div>
           </div>
@@ -67,20 +112,22 @@
       </div>
     </section>
 
-
     <section class="LastMinuteOffers">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
           <div class="col-12">
             <h2 class="lastminute-title">Last Minute Offers</h2>
           </div>
           <div class="col-12">
-            <div class="swiper2">
-              <!-- Additional required wrapper -->
+            <div class="swiper swiper2">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="card">
-                    <img src="images/Paris.png" class="card-img-top" alt="..." />
+                    <img
+                      src="images/Paris.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
                     <div class="card-body">
                       <h5 class="card-title">Paris</h5>
                       <p class="card-text">
@@ -88,80 +135,9 @@
                       </p>
                       <div class="destination-rating">
                         <p>1,100$</p>
-                        <div class="star-wrapper"><img src="images/Star.svg" alt=""></div>
-                        <p>5.0</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img src="images/Paris.png" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h5 class="card-title">Paris</h5>
-                      <p class="card-text">
-                        In Paris, immerse yourself in timeless elegance.
-                      </p>
-                      <div class="destination-rating">
-                        <p>1,100$</p>
-                        <div class="star-wrapper"><img src="images/Star.svg" alt=""></div>
-                        <p>5.0</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img src="images/Paris.png" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h5 class="card-title">Paris</h5>
-                      <p class="card-text">
-                        In Paris, immerse yourself in timeless elegance.
-                      </p>
-                      <div class="destination-rating">
-                        <p>1,100$</p>
-                        <div class="star-wrapper"><img src="images/Star.svg" alt=""></div>
-                        <p>5.0</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="card">
-                    <img src="images/Paris.png" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h5 class="card-title">Paris</h5>
-                      <p class="card-text">
-                        In Paris, immerse yourself in timeless elegance.
-                      </p>
-                      <div class="destination-rating">
-                        <p>1,100$</p>
-                        <div class="star-wrapper"><img src="images/Star.svg" alt=""></div>
-                        <p>5.0</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img src="images/Paris.png" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h5 class="card-title">Paris</h5>
-                      <p class="card-text">
-                        In Paris, immerse yourself in timeless elegance.
-                      </p>
-                      <div class="destination-rating">
-                        <p>1,100$</p>
-                        <div class="star-wrapper"><img src="images/Star.svg" alt=""></div>
-                        <p>5.0</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img src="images/Paris.png" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h5 class="card-title">Paris</h5>
-                      <p class="card-text">
-                        In Paris, immerse yourself in timeless elegance.
-                      </p>
-                      <div class="destination-rating">
-                        <p>1,100$</p>
-                        <div class="star-wrapper"><img src="images/Star.svg" alt=""></div>
+                        <div class="star-wrapper">
+                          <img src="images/Star.svg" alt="" />
+                        </div>
                         <p>5.0</p>
                       </div>
                     </div>
@@ -169,7 +145,11 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="card">
-                    <img src="images/Paris.png" class="card-img-top" alt="..." />
+                    <img
+                      src="images/Paris.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
                     <div class="card-body">
                       <h5 class="card-title">Paris</h5>
                       <p class="card-text">
@@ -177,13 +157,21 @@
                       </p>
                       <div class="destination-rating">
                         <p>1,100$</p>
-                        <div class="star-wrapper"><img src="images/Star.svg" alt=""></div>
+                        <div class="star-wrapper">
+                          <img src="images/Star.svg" alt="" />
+                        </div>
                         <p>5.0</p>
                       </div>
                     </div>
                   </div>
+                </div>
+                <div class="swiper-slide">
                   <div class="card">
-                    <img src="images/Paris.png" class="card-img-top" alt="..." />
+                    <img
+                      src="images/Paris.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
                     <div class="card-body">
                       <h5 class="card-title">Paris</h5>
                       <p class="card-text">
@@ -191,13 +179,21 @@
                       </p>
                       <div class="destination-rating">
                         <p>1,100$</p>
-                        <div class="star-wrapper"><img src="images/Star.svg" alt=""></div>
+                        <div class="star-wrapper">
+                          <img src="images/Star.svg" alt="" />
+                        </div>
                         <p>5.0</p>
                       </div>
                     </div>
                   </div>
+                </div>
+                <div class="swiper-slide">
                   <div class="card">
-                    <img src="images/Paris.png" class="card-img-top" alt="..." />
+                    <img
+                      src="images/Paris.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
                     <div class="card-body">
                       <h5 class="card-title">Paris</h5>
                       <p class="card-text">
@@ -205,23 +201,131 @@
                       </p>
                       <div class="destination-rating">
                         <p>1,100$</p>
-                        <div class="star-wrapper"><img src="images/Star.svg" alt=""></div>
+                        <div class="star-wrapper">
+                          <img src="images/Star.svg" alt="" />
+                        </div>
+                        <p>5.0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="images/Paris.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Paris</h5>
+                      <p class="card-text">
+                        In Paris, immerse yourself in timeless elegance.
+                      </p>
+                      <div class="destination-rating">
+                        <p>1,100$</p>
+                        <div class="star-wrapper">
+                          <img src="images/Star.svg" alt="" />
+                        </div>
+                        <p>5.0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="images/Paris.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Paris</h5>
+                      <p class="card-text">
+                        In Paris, immerse yourself in timeless elegance.
+                      </p>
+                      <div class="destination-rating">
+                        <p>1,100$</p>
+                        <div class="star-wrapper">
+                          <img src="images/Star.svg" alt="" />
+                        </div>
+                        <p>5.0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="images/Paris.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Paris</h5>
+                      <p class="card-text">
+                        In Paris, immerse yourself in timeless elegance.
+                      </p>
+                      <div class="destination-rating">
+                        <p>1,100$</p>
+                        <div class="star-wrapper">
+                          <img src="images/Star.svg" alt="" />
+                        </div>
+                        <p>5.0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="images/Paris.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Paris</h5>
+                      <p class="card-text">
+                        In Paris, immerse yourself in timeless elegance.
+                      </p>
+                      <div class="destination-rating">
+                        <p>1,100$</p>
+                        <div class="star-wrapper">
+                          <img src="images/Star.svg" alt="" />
+                        </div>
+                        <p>5.0</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="images/Paris.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Paris</h5>
+                      <p class="card-text">
+                        In Paris, immerse yourself in timeless elegance.
+                      </p>
+                      <div class="destination-rating">
+                        <p>1,100$</p>
+                        <div class="star-wrapper">
+                          <img src="images/Star.svg" alt="" />
+                        </div>
                         <p>5.0</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- If we need pagination -->
               <div class="swiper-pagination-2"></div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-
-   
 
     <section class="travel-destinations">
       <div class="container">
@@ -235,7 +339,9 @@
               <div class="card-body">
                 <div class="destination-rating">
                   <p>1,100$</p>
-                  <div class="star-wrapper"><img src="images/Star.svg" alt=""></div>
+                  <div class="star-wrapper">
+                    <img src="images/Star.svg" alt="" />
+                  </div>
                   <p>5.0</p>
                 </div>
                 <h5 class="card-title">Switzerland</h5>
@@ -251,7 +357,9 @@
               <div class="card-body">
                 <div class="destination-rating">
                   <p>1,100$</p>
-                  <div class="star-wrapper"><img src="images/Star.svg" alt=""></div>
+                  <div class="star-wrapper">
+                    <img src="images/Star.svg" alt="" />
+                  </div>
                   <p>5.0</p>
                 </div>
                 <h5 class="card-title">Paris</h5>
@@ -267,7 +375,9 @@
               <div class="card-body">
                 <div class="destination-rating">
                   <p>1,100$</p>
-                  <div class="star-wrapper"><img src="images/Star.svg" alt=""></div>
+                  <div class="star-wrapper">
+                    <img src="images/Star.svg" alt="" />
+                  </div>
                   <p>5.0</p>
                 </div>
                 <h5 class="card-title">London</h5>
@@ -283,14 +393,15 @@
               <div class="card-body">
                 <div class="destination-rating">
                   <p>1,100$</p>
-                  <div class="star-wrapper"><img src="images/Star.svg" alt=""></div>
+                  <div class="star-wrapper">
+                    <img src="images/Star.svg" alt="" />
+                  </div>
                   <p>5.0</p>
                 </div>
                 <h5 class="card-title">Switzerland</h5>
                 <p class="card-text">
                   Embrace Switzerland's breathtaking alpine landscapes.
                 </p>
-
               </div>
             </div>
           </div>
@@ -300,7 +411,9 @@
               <div class="card-body">
                 <div class="destination-rating">
                   <p>1,100$</p>
-                  <div class="star-wrapper"><img src="images/Star.svg" alt=""></div>
+                  <div class="star-wrapper">
+                    <img src="images/Star.svg" alt="" />
+                  </div>
                   <p>5.0</p>
                 </div>
                 <h5 class="card-title">Paris</h5>
@@ -316,7 +429,9 @@
               <div class="card-body">
                 <div class="destination-rating">
                   <p>1,100$</p>
-                  <div class="star-wrapper"><img src="images/Star.svg" alt=""></div>
+                  <div class="star-wrapper">
+                    <img src="images/Star.svg" alt="" />
+                  </div>
                   <p>5.0</p>
                 </div>
                 <h5 class="card-title">London</h5>
@@ -406,41 +521,47 @@
       </div>
     </section>
 
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper(".swiper", {
         // Optional parameters
         loop: true,
+        effect: "fade",
         // If we need pagination
         pagination: {
           el: ".swiper-pagination",
-          paginationClickable: true,
+          clickable: true,
         },
         scrollbar: {
           el: ".swiper-scrollbar",
         },
       });
-
     </script>
-        <script>
-          const swiper2 = new Swiper(".swiper2", {
-            // Optional parameters
-            loop: true,
-            // If we need pagination
-            pagination: {
-              el: ".swiper-pagination-2",
-              paginationClickable: true,
-            },
-            scrollbar: {
-              el: ".swiper-scrollbar",
-            },
-          });
-    
-        </script>
+    <script>
+      const swiper2 = new Swiper(".swiper2", {
+        // Optional parameters
+        loop: true,
+        spaceBetween:30,
+        breakpoints: {
+          600: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 3,
+          },
+        },
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination-2",
+          clickable: true,
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
   </body>
 </html>
