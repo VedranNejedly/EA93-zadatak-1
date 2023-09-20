@@ -14,6 +14,11 @@
     position: relative;
 
     > .container-fluid {
+      >.row{
+        >.col-12{
+          padding: 0;
+        }
+      }
       > nav {
         position: absolute;
         left: 200px;
@@ -60,9 +65,7 @@
   max-height: 100vh;
 
   > .swiper-slide {
-    @media only screen and (max-width: 600px) {
       height: 100vh;
-    }
     > img {
       width: 100% !important;
     }
