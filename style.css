@@ -6,16 +6,14 @@
   @media only screen and (max-width: 600px) {
     > .container-fluid {
       > nav {
-        background-color: black;
+        background-color: black !important;
       }
     }
   }
   @media only screen and (min-width: 992px) {
     position: relative;
+
     > .container-fluid {
-      padding: 0;
-    }
-    > .container {
       > nav {
         position: absolute;
         left: 200px;
@@ -33,6 +31,13 @@
   justify-content: flex-end;
 }
 .navbar-list {
+  @media only screen and (max-width: 600px) {
+    > li {
+      > a {
+        color: white !important;
+      }
+    }
+  }
   @media only screen and (min-width: 992px) {
     display: flex;
     > li + li {
@@ -44,6 +49,9 @@
         font-size: 16px;
         font-weight: 700;
       }
+      > a:hover {
+        color: var(--primary) !important;
+      }
     }
   }
 }
@@ -52,6 +60,9 @@
   max-height: 100vh;
 
   > .swiper-slide {
+    @media only screen and (max-width: 600px) {
+      height: 100vh;
+    }
     > img {
       width: 100% !important;
     }
@@ -71,23 +82,24 @@
 }
 
 .main-slide {
-  @media only screen and (min-width: 992px) {
-    position: relative;
+  position: relative;
 
-    > .hero-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      >h1{
-        color: white!important;
-        text-align: center;
+  > .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    > h1 {
+      color: white !important;
+      text-align: center;
+      @media only screen and (min-width: 992px) {
         min-width: 1000px;
       }
-      > p {
-        text-align: center;
-        color: white;
-      }
+    }
+    > p {
+      text-align: center;
+      color: white;
     }
   }
 }
@@ -114,9 +126,10 @@ ul {
 }
 
 .promotion {
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 991px) {
     padding: 82px 0px;
   }
+  
   @media only screen and (min-width: 992px) {
     padding: 164px 0px;
   }
@@ -136,6 +149,9 @@ ul {
   @media only screen and (max-width: 600px) {
     padding: 60px 0px;
   }
+  @media only screen and (min-width: 768px) {
+    padding: 90px 0px;
+  }
   @media only screen and (min-width: 992px) {
     padding: 120px 0px;
   }
@@ -150,8 +166,13 @@ ul {
   @media only screen and (max-width: 600px) {
     padding: 82px 0px;
   }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 768px) {
     padding: 164px 0px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 50%;
+  }
+  @media only screen and (min-width: 992px) {
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: 25%;
@@ -175,6 +196,7 @@ ul {
     @media only screen and (max-width: 600px) {
       background-color: rgb(255, 255, 255, 0.5);
     }
+
     @media only screen and (min-width: 992px) {
       width: 740px;
       padding: 64px 65px;
@@ -186,12 +208,12 @@ h1 {
   font-weight: 700 !important;
 
   @media only screen and (max-width: 600px) {
-    font-size: 60px !important;
-    line-height: 68px !important;
+    font-size: 30px !important;
+    line-height: 34px !important;
   }
   @media only screen and (min-width: 992px) {
-  line-height: 76px !important;
-  font-size: 80px!important;
+    line-height: 76px !important;
+    font-size: 80px !important;
   }
 }
 
@@ -212,7 +234,7 @@ h5 {
   font-size: 36px !important;
   line-height: 40px !important;
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-weight: 700!important;
 }
 
 p {
@@ -241,6 +263,10 @@ a {
   text-decoration: none !important;
 }
 
+a:hover {
+  color: var(--primary) !important;
+}
+
 button.btn-primary {
   background-color: var(--primary);
   color: white;
@@ -253,7 +279,7 @@ button.btn-primary {
   @media only screen and (max-width: 600px) {
     padding: 10px 12px 10px 12px;
   }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 768px) {
     padding: 20px 24px 20px 24px;
   }
 }
@@ -263,8 +289,12 @@ button.btn-primary {
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
+
   @media only screen and (max-width: 600px) {
-    padding: 76px 0px;
+    padding: 60px 0px;
+  }
+  @media only screen and (min-width: 768px) {
+    padding: 100px 0px;
   }
   @media only screen and (min-width: 992px) {
     padding: 152px 0px;
@@ -272,16 +302,41 @@ button.btn-primary {
 }
 .footer-logo {
   margin-bottom: 12px;
+  @media only screen and (max-width: 600px) {
+    text-align: center;
+    margin-bottom: 16px;
+  }
 }
+
+.footer-destinations {
+  @media only screen and (max-width: 600px) {
+    padding: 0px;
+  }
+}
+
+.newsletter{
+  @media only screen and (max-width: 600px) {
+    text-align: center;
+  }
+}
+
 input {
   padding: 16px;
   border-radius: 8px;
   border: 1px solid #d9d9d9;
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 16px!important;
+  }
 }
+
+
 
 .travel-destinations {
   @media only screen and (max-width: 600px) {
     padding: 82px 0px;
+  }
+  @media only screen and (min-width: 768px) {
+    padding: 122px 0px;
   }
   @media only screen and (min-width: 992px) {
     padding: 164px 0px;
