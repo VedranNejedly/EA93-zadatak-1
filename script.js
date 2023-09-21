@@ -1,3 +1,8 @@
+setTimeout(() => {
+  var loader = document.getElementById("loader_bg");
+  loader.classList.add('loaded')
+}, "3000");
+
 document.addEventListener("DOMContentLoaded", (event) => {
   const swiper = new Swiper("#swiper1", {
     // Optional parameters
@@ -38,4 +43,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
       el: ".swiper-scrollbar",
     },
   });
+
+
 });
